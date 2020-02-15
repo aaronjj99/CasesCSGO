@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<title>open</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/media.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?app=14052019195502?app=23052019160738" />
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div style="display:none;">
+			<div class="modal" id="modal-1" style="width:550px;">
+				<div class="modal-close box-modal_close arcticmodal-close"></div>
+				<div class="modal-title">ПОПОЛНЕНИЕ СЧЕТА</div>
+				<div class="modal-input">
+					<ul class="list select-none">
+						<li>Бонусы</li>
+						<li>200-500 Р <span>+10%</span></li>
+						<li>200-500 Р <span>+10%</span></li>
+						<li>200-500 Р <span>+10%</span></li>
+						<li>200-500 Р <span>+10%</span></li>
+						<li>200-500 Р <span>+10%</span></li>
+						<li>200-500 Р <span>+10%</span></li>
+					</ul>
+					<div class="left">
+						<span class="title">Сумма:</span> 
+						<input type="text" value="" autofocus>
+						<span class="rub"><i class="fas fa-ruble-sign"></i></span>
+					</div>
+					<div class="right">
+						<span class="bonus">+228 Р БОНУС</span>
+						<span class="q">?</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="center">
+					<button type="submit"><span>ПОПОЛНИТЬ</span></button>
+					<div class="clear"></div>
+					<a href="#">ПОПОЛНИТЬ СКИНАМИ</a>
+				</div>
+				<div class="bg2">
+					<div class="modal-title">АКТИВИРУЙТЕ ПРОМОКОД <span>(Если есть)</span></div>
+					<input type="text" class="promo" placeholder="Введите промокод">
+					<div class="center">
+						<button type="submit"><span>ПРИМЕНИТЬ</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="modal-2" style="width:632px;">
+				<div class="modal-close box-modal_close arcticmodal-close"></div>
+				<div class="modal-title">ПОЗДРАВЛЯЕМ! ВАШ ВЫИГРЫШ!</div>
+				<div class="modal-wp wp-1"><img src="images/w.png" alt=""></div>
+				<div class="modal-wp-name color-1">M4A4 | HOWL</div>
+				<div class="modal-wp-text">ПРЯМО С ЗАВОДА</div>
+				<div class="center btn2">
+					<button type="submit"><span>ЗАБРАТЬ</span></button>
+					<button type="submit"><span>ПРОДАТЬ ЗА 135 Р</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="panel">
+				<div class="logo"><a href="#"></a></div>
+				<div class="line"></div>
+				<div class="login" style="display:none;">
+					<a href="#">ВОЙТИ ЧЕРЕЗ <span>STEAM</span></a>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="mini-profile" style="display:block;">
+					<a href="#" class="mini-profile-logout"></a>
+					<div class="mini-profile-ava"><a href="#"><img src="images/ava.jpg" alt=""></a></div>
+					<div class="mini-profile-login ell">Даниилка Фастров</div>
+					<a href="#" class="mini-profile-balance" onclick="$('#modal-1').arcticmodal(); return false;">+ 1337 <i class="fas fa-ruble-sign"></i></a>
+					<div class="clear"></div>
+					<a href="#" class="mini-profile-skin">Пополнить скинами</a>
+				</div>
+				<div class="line"></div>
+				<ul class="menu">
+					<li class="active"><a href="#">Кейсы</a></li>
+					<li><a href="#">Контракты</a></li>
+					<li><a href="#">Топ игроков</a></li>
+					<li><a href="#">F.A.Q</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="live">
+					<div class="live-btn">
+						<a href="#" onclick="btn(1); return false;" class="active"></a>
+						<a href="#" onclick="btn(2); return false;"></a>
+					</div>
+					<div class="live-ul">
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-2">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-6">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-2">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-2">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-2">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-1">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-2">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-3">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-4">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+						<div class="live-i live-5">
+							<a href="#" class="live-hover"></a>
+							<div class="live-wp"><img src="images/w.png" alt=""></div>
+							<div class="live-name ell">M4A4|Howl</div>
+						</div>
+					</div>
+				</div>
+				<ul class="stats">
+					<li>КЕЙСОВ ОТКРЫТО <span>1 488 228</span></li>
+					<li>ПОЛЬЗОВАТЕЛЕЙ <span>1 337 228</span></li>
+					<li>ОНЛАЙН <span>228</span></li>
+				</ul>
+				<div class="c-title">КЕЙС REBORN V3</div>
+				<div class="center case-do" style="display:block;">
+					<div class="case open-case">
+						<div class="case-wp"><img src="images/case1.png" alt=""></div>
+						<div class="case-name ell">КЕЙС REBORN V3</div>
+						<div class="case-rub">1337 Р <span>1500 Р</span></div>
+					</div>
+					<div class="open-case-btn">
+						<a href="#" onclick="rul(); return false;">ОТКРЫТЬ <span>ОБЫЧНО</span></a>
+						<a href="#" onclick="$('#modal-2').arcticmodal(); return false;">ОТКРЫТЬ <span>БЫСТРО</span></a>
+					</div>
+				</div>
+				<div class="rulet" style="display:none;">
+					<div class="l2"></div>
+					<div class="r2"></div>
+					<div class="rul">
+						<div class="rul-ul">
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-1">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-2">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-3">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-4">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-5">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+							<div class="rul-i rul-6">
+								<div class="rul-wp"><img src="images/w.png" alt=""></div>
+								<div class="rul-name">M4A4|Howl</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-title nw">ЧТО МОЖЕТ ВЫПАСТЬ</div>
+				<div class="item-loop">
+					<div class="item item-1">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-2">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-3">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-4">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-5">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-6">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-2">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-3">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-4">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-5">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-6">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-1">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-2">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-3">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-4">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-5">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+					<div class="item item-6">
+						<div class="item-in">
+							<div class="item-wp"><img src="images/w.png" alt=""></div>
+							<div class="item-name"><span>M4A4 HELLFIRE</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="logo2"></div>
+					<a href="https://thronedesign.ru" class="copy" target="_blank"></a>
+					<ul>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
